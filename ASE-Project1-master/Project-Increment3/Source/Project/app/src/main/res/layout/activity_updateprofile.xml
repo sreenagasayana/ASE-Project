@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/shoppingscreenbackground">
+
+    <Button
+        android:id="@+id/homescreen"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="52dp"
+        android:text="&lt;Go to home screen"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        android:onClick="shoppingRedirect"/>
+
+    <EditText
+        android:id="@+id/updateFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/updateLastName"
+        android:layout_below="@+id/updateprofilegreeting"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/updateprofilegreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/homescreen"
+        android:layout_below="@+id/homescreen"
+        android:layout_marginEnd="43dp"
+        android:layout_marginTop="34dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/updateFirstName"
+        android:layout_alignBottom="@+id/updateFirstName"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginStart="12dp"
+        android:text="First Name:"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="62dp"
+        android:text="Last Name"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/updateLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/updatePassword"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="62dp"
+        android:text="Password:"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="44dp"
+        android:text="Confirm Password:"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/updatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/updateConfirmPassword"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/updateConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/homescreen"
+        android:layout_alignTop="@+id/textView8"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@android:color/background_light"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="Update Profile"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:onClick="updateProfile"/>
+
+    <TextView
+        android:id="@+id/updateProfileError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

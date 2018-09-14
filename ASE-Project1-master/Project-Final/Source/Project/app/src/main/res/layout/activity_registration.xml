@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/projectbackground">
+
+    <EditText
+        android:id="@+id/registerFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/button"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/registerLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/registerFirstName"
+        android:layout_below="@+id/registerFirstName"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/registerEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/registerLastName"
+        android:layout_below="@+id/registerLastName"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:background="@android:color/background_light"/>
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/registerEmailAddress"
+        android:layout_below="@+id/registerEmailAddress"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@android:color/background_light"/>
+
+    <EditText
+        android:id="@+id/registerConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/registerPassword"
+        android:layout_below="@+id/registerPassword"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayText"
+        android:layout_marginTop="23dp"
+        android:layout_toStartOf="@+id/button"
+        android:background="@android:color/holo_blue_light"
+        android:elevation="0dp"
+        android:onClick="registerUser"
+        android:text="SignUp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="40dp"
+        android:text="LogIn"
+        android:onClick="loginRedirect"/>
+
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SignUp"
+        android:layout_alignBottom="@+id/SignUp"
+        android:layout_alignStart="@+id/registerConfirmPassword"
+        android:layout_marginStart="12dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Reset"
+        android:onClick="reset"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" />
+
+</RelativeLayout>

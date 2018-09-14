@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="Welcome to Smart Shopping"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/loginEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="81dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        android:background="@android:color/background_light"/>
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/loginEmailAddress"
+        android:layout_below="@+id/loginEmailAddress"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_password"
+        android:background="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="SignIn"
+        android:onClick="login"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="76dp"
+        android:layout_toStartOf="@+id/signUp"
+        android:gravity="center"
+        android:text="Haven't SignedUp yet ?"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/signUp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="79dp"
+        android:text="SignUp"
+        android:onClick="navigateToRegisterScreen"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/loginError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="?attr/colorError"
+        android:visibility="invisible" />
+
+</RelativeLayout>

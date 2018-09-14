@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/logoutButton"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="60dp"
+        android:onClick="shoppingLogout"
+        android:text="Logout"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/userdetails"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/logoutButton"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:onClick="editUserProfileShopping"
+        android:text="My Profile"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/veg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userdetails"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/userdetails"
+        android:text="Vegetarian"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/nv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/veg"
+        android:layout_marginTop="129dp"
+        android:layout_toEndOf="@+id/userdetails"
+        android:text="Non Vegetarian"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nv4"
+        android:layout_marginTop="41dp"
+        android:layout_toStartOf="@+id/veg2"
+        android:text="Others"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/veg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/userdetails"
+        android:layout_below="@+id/veg"
+        android:layout_marginTop="23dp"
+        android:textSize="19sp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"/>
+    android:onClick="goToShoppingScreen"/>
+
+    <TextView
+        android:id="@+id/veg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/veg1"
+        android:layout_alignBottom="@+id/veg1"
+        android:layout_marginEnd="32dp"
+        android:layout_toStartOf="@+id/logoutButton"
+        android:textSize="19sp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"/>
+
+    <TextView
+        android:id="@+id/veg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/veg1"
+        android:layout_below="@+id/veg1"
+        android:layout_marginTop="28dp"
+        android:textSize="19sp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"/>
+
+    <TextView
+        android:id="@+id/nv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nv"
+        android:layout_marginTop="21dp"
+        android:layout_toStartOf="@+id/veg"
+        android:textSize="19sp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"/>
+
+    <TextView
+        android:id="@+id/nv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nv1"
+        android:layout_alignBottom="@+id/nv1"
+        android:layout_alignStart="@+id/veg2"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/nv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nv1"
+        android:layout_below="@+id/nv2"
+        android:layout_marginTop="18dp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/nv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nv3"
+        android:layout_alignStart="@+id/nv2"
+        android:textSize="19sp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"/>
+
+    <TextView
+        android:id="@+id/others1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/others"
+        android:layout_marginTop="14dp"
+        android:layout_toStartOf="@+id/veg"
+        android:textSize="19sp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"/>
+
+    <TextView
+        android:id="@+id/others2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/others1"
+        android:layout_alignBottom="@+id/others1"
+        android:layout_alignStart="@+id/nv4"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/others3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/others1"
+        android:layout_below="@+id/others1"
+        android:layout_marginTop="28dp"
+        android:textSize="19sp"
+        android:clickable="true"
+        android:onClick="goToShoppingScreen"/>
+
+
+</RelativeLayout>

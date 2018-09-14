@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="UnityThemeSelector" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+    </style>
+    <style name="UnityThemeSelector.Translucent" parent="@style/UnityThemeSelector">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
